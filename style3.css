@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.logo{
+    width: 120px;
+    height: 45px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    
+}
+nav ul{
+    /* flex: -5; */
+    text-align: right;
+    /* padding: 0 30px; */
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 40px;
+    /* margin: 10px 30px; */
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: white;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover:after{
+    width: 70%;
+}
+.container{
+    border: 2px solid black;
+    /* margin: 10px; */
+    /* padding: 20px; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-image: url(./images2/images3.jpeg);
+    
+}
+.cont{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.cont h1{
+margin-bottom: 10px;
+}
+.cont a{
+    margin-top: 20px;
+    font-size: 1px;
+    transition: 2s;
+}
+.cont a button p{
+    font-size: 20px;
+    transition: 2s ease-in-out;
+}
+.cont a button{
+    background-color: lightgreen;
+    width: 13em;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+}
+.cont p{
+    font-size: 1.6em;
+}
+a button:hover{
+    cursor: pointer;
+    /* transform: scale(1.5); */
+    border: 3px solid lightskyblue;
+    width: 15em;
+}
+a button:hover p{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: blue ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: 1px solid lightskyblue; */
+}
